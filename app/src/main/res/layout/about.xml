@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mobilbackground"
+    tools:context=".about">
+
+    <TextView
+        android:id="@+id/aboutbaslik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Hakkımızda"
+        android:textColor="@color/white"
+        android:textSize="32sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="162dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/aboutbaslik"
+        android:layout_alignStart="@+id/aboutbaslik"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-20dp"
+        app:srcCompat="@drawable/cizgi" />
+
+    <TextView
+        android:id="@+id/icerik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="Kodlayan : VOLKAN KORKMAZ"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icerik"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="volkanseval.vk@gmail.com"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:paddingRight="66dp"
+        android:paddingLeft="66dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mail"
+        android:layout_alignStart="@+id/mail"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/saflogo" />
+
+    <TextView
+        android:id="@+id/aciklama2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:layout_below="@+id/logo"
+        android:gravity="center"
+        android:text="Bu Uygulama 3. Sınıf Dersi Mobil Programlama Dersi İçin Kodlanmıştır."
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+</RelativeLayout>

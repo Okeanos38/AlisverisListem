@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+<!-- LAYOUT 1  -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="Alışveriş Listesi"
+        android:textColor="@color/textcolor"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="162dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-18dp"
+        app:srcCompat="@drawable/cizgi" />
+
+    <EditText
+        android:id="@+id/txtBaslik"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:padding="12dp"
+        android:hint="Ürün İsmi"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtAciklama"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/txtBaslik"
+        android:layout_below="@+id/txtBaslik"
+        android:gravity="center_vertical"
+        android:background="@drawable/edittext"
+        android:layout_marginTop="17dp"
+        android:padding="12dp"
+        android:ems="10"
+        android:hint="Açıklaması"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/btnEkle"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/txtAciklama"
+        android:layout_alignStart="@+id/txtAciklama"
+        android:layout_below="@+id/txtAciklama"
+        android:layout_marginTop="15dp"
+        android:textSize="18dp"
+        android:background="@drawable/butonbackground"
+        android:fontFamily="serif"
+        android:textColor="@color/white"
+        android:text="Ürünü Ekle" />
+
+    <Button
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/btnEkle"
+        android:layout_marginTop="15dp"
+        android:textSize="18dp"
+        android:background="@drawable/butonbackground"
+        android:fontFamily="serif"
+        android:textColor="@color/white"
+        android:text="Hakkımızda" />
+
+
+    <ListView
+        android:id="@+id/listData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/about"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp" />
+
+
+    <!-- LAYOUT 3 -->
+</RelativeLayout>
+
